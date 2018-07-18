@@ -7,9 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B66DD0D820FF335F003FCFE0 /* RollDiceGameError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66DD0D720FF335F003FCFE0 /* RollDiceGameError.swift */; };
 		B6DAF25D20FF24BB007EB7B9 /* Casino_Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6DAF25320FF24BB007EB7B9 /* Casino_Domain.framework */; };
 		B6DAF26220FF24BB007EB7B9 /* Casino_DomainTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6DAF26120FF24BB007EB7B9 /* Casino_DomainTests.swift */; };
 		B6DAF26420FF24BB007EB7B9 /* Casino_Domain.h in Headers */ = {isa = PBXBuildFile; fileRef = B6DAF25620FF24BB007EB7B9 /* Casino_Domain.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B6DAF27020FF2588007EB7B9 /* Bet.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6DAF26F20FF2588007EB7B9 /* Bet.swift */; };
+		B6DAF27220FF2599007EB7B9 /* Chip.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6DAF27120FF2599007EB7B9 /* Chip.swift */; };
+		B6DAF27420FF25A3007EB7B9 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6DAF27320FF25A3007EB7B9 /* Player.swift */; };
+		B6DAF27620FF25B5007EB7B9 /* RollDiceGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6DAF27520FF25B5007EB7B9 /* RollDiceGame.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,12 +28,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B66DD0D720FF335F003FCFE0 /* RollDiceGameError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RollDiceGameError.swift; sourceTree = "<group>"; };
 		B6DAF25320FF24BB007EB7B9 /* Casino_Domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Casino_Domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6DAF25620FF24BB007EB7B9 /* Casino_Domain.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Casino_Domain.h; sourceTree = "<group>"; };
 		B6DAF25720FF24BB007EB7B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B6DAF25C20FF24BB007EB7B9 /* Casino.DomainTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Casino.DomainTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6DAF26120FF24BB007EB7B9 /* Casino_DomainTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Casino_DomainTests.swift; sourceTree = "<group>"; };
 		B6DAF26320FF24BB007EB7B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B6DAF26F20FF2588007EB7B9 /* Bet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bet.swift; sourceTree = "<group>"; };
+		B6DAF27120FF2599007EB7B9 /* Chip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chip.swift; sourceTree = "<group>"; };
+		B6DAF27320FF25A3007EB7B9 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		B6DAF27520FF25B5007EB7B9 /* RollDiceGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RollDiceGame.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +83,11 @@
 			children = (
 				B6DAF25620FF24BB007EB7B9 /* Casino_Domain.h */,
 				B6DAF25720FF24BB007EB7B9 /* Info.plist */,
+				B6DAF26F20FF2588007EB7B9 /* Bet.swift */,
+				B6DAF27120FF2599007EB7B9 /* Chip.swift */,
+				B6DAF27320FF25A3007EB7B9 /* Player.swift */,
+				B6DAF27520FF25B5007EB7B9 /* RollDiceGame.swift */,
+				B66DD0D720FF335F003FCFE0 /* RollDiceGameError.swift */,
 			);
 			path = Casino.Domain;
 			sourceTree = "<group>";
@@ -195,6 +210,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6DAF27020FF2588007EB7B9 /* Bet.swift in Sources */,
+				B6DAF27620FF25B5007EB7B9 /* RollDiceGame.swift in Sources */,
+				B66DD0D820FF335F003FCFE0 /* RollDiceGameError.swift in Sources */,
+				B6DAF27420FF25A3007EB7B9 /* Player.swift in Sources */,
+				B6DAF27220FF2599007EB7B9 /* Chip.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -393,6 +413,7 @@
 		B6DAF26B20FF24BB007EB7B9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = AVGCX5Z5VU;
 				INFOPLIST_FILE = Casino.DomainTests/Info.plist;
@@ -411,6 +432,7 @@
 		B6DAF26C20FF24BB007EB7B9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = AVGCX5Z5VU;
 				INFOPLIST_FILE = Casino.DomainTests/Info.plist;
