@@ -41,7 +41,7 @@ class Player {
     }
     
     func has(chips: Chip) -> Bool {
-        return self.availableChips >= chips;
+        return self.availableChips >= chips
     }
     
     func bet(_ bet: Bet) {
@@ -49,7 +49,7 @@ class Player {
     }
     
     func win(chipsAmount: Int) {
-        self.availableChips = Chip(amount: self.availableChips.amount + chipsAmount);
+        self.availableChips = Chip(amount: self.availableChips.amount + chipsAmount)
         self.currentBet = nil
     }
     
